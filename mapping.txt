@@ -1,0 +1,14 @@
+
+/*
+- functions
+    - get total
+    - create product
+    - save to local storage
+    - clear inputs after creation
+    - read
+    - create number of count
+    - delete
+    - update
+    - search
+    - clean data
+*/

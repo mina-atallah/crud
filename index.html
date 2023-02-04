@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Crud Container -->
+  <div class="crud">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>curds</h1>
+      <p>product management system</p>
+    </header> <!-- End of Header -->
+
+    <!-- Inputs -->
+    <div class="inputs">
+      <input type="text" placeholder="Title" id="title">
+
+      <div class="price">
+        <input onkeyup="getTotal()" type="number" placeholder="Price" id="price">
+        <input onkeyup="getTotal()" type="number" placeholder="Taxes" id="taxes">
+        <input onkeyup="getTotal()" type="number" placeholder="Ads" id="ads">
+        <input onkeyup="getTotal()" type="number" placeholder="Discount" id="discount">
+        <small id="total"></small>
+      </div>
+
+      <input type="number" placeholder="Count" id="count">
+      <input type="text" placeholder="Category" id="category">
+      <button id="submit">create</button>
+
+    </div> <!-- End of Inputs -->
+
+    <!-- Outputs -->
+    <div class="outputs">
+      <div class="search_block">
+        <input onkeyup="searchData(this.value)" type="search" placeholder="Search" id="search">
+        <div class="btns_container">
+          <button id="searchTitle">Search By Title</button>
+          <button id="searchCategory">Search By Category</button>
+        </div>
+      </div>
+      <div id="deleteAll"></div>
+      <!-- Table -->
+      <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+      <!-- End of Table -->
+    </div> <!-- End of Outouts -->
+
+  </div> <!--End of Crud Container -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
